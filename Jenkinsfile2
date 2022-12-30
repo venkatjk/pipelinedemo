@@ -12,6 +12,16 @@ pipeline{
                
                 
             }
+            stage("Checkout public repo"){
+            steps{
+                echo "========git public repo clone========"
+                cleanWs()
+                git branch: 'main', url: 'https://github.com/venkatjk/gitlearning.git'
+               
+               
+                
+            }
+            
            
         }
     }
