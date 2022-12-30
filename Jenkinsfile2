@@ -25,6 +25,18 @@ pipeline{
             
            
         }
+         stage("Checkout public repo1 "){
+            steps{
+                echo "========git public repo 1clone========"
+                cleanWs()
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/venkatjk/gitlearning.git']]])
+                            
+            }
+            
+           
+        }
+        
     }
+    
     }
     
