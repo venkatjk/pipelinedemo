@@ -4,9 +4,12 @@ pipeline{
 
     stages{
         stage("echo"){
+            input {
+                 message 'Do you want to continue?'
+                ok 'venkat'
+            }
             steps{
                 echo 'This is echo build stage'
-                sleep 10
             }
            
         }
