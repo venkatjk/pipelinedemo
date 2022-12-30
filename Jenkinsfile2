@@ -2,40 +2,19 @@ pipeline{
     
     agent any
 
-    stages{
-        stage("echo"){
-            input {
-                 message 'Do you want to continue?'
-                ok 'venkat'
-            }
-            steps{
-                echo 'This is echo build stage'
-            }
-           
-        }
-        stage("Shell command"){
-            steps{
-                sh '''date
-                cal 2023
-                pwd'''
-            }
-           
-        }
+    stages {
+  stage('Test') {
+    steps {
+      // One or more steps need to be included within the steps block.
     }
-    post {
-  always {
-    echo "Always"
+
+    input {
+      message 'Do you want to continue'
+    }
   }
-  aborted {
-   echo "Aborted"
-  }
-  success {
-    echo "success"
-  }
-  failure {
-    echo "failure"
-  }
+
 }
+
 
     
 }
