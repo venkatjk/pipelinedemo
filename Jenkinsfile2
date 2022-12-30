@@ -6,9 +6,10 @@ pipeline{
         stage("Clone"){
             steps{
                 echo "========git repo clone========"
-                git branch: 'main', credentialsId: 'jenkinspipelineauthentication', url: 'https://github.com/venkatjk/jenkins-private.git'
-                sleep 20
                 cleanWs()
+                git branch: 'main', credentialsId: 'jenkinspipelineauthentication', url: 'https://github.com/venkatjk/jenkins-private.git'
+               
+               
                 
             }
            
