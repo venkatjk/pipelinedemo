@@ -11,7 +11,9 @@ pipeline{
         }
         stage("Shell command"){
             steps{
-                sh 'date'
+                sh '''date
+                cal 2023
+                pwd'''
             }
            
         }
