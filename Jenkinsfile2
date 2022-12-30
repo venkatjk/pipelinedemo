@@ -12,6 +12,7 @@ pipeline{
                
                 
             }
+        }
             stage("Checkout public repo"){
             steps{
                 echo "========git public repo clone========"
@@ -25,6 +26,5 @@ pipeline{
            
         }
     }
+    }
     
-}
-}
