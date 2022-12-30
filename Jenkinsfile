@@ -55,7 +55,7 @@ pipeline {
             steps {
                 sh 'echo "${BUILD_DISPLAY_NAME}"'
                 sh 'echo "${name}"'
-                sh 'pwdd'
+                sh 'pwd'
             }
         }
         
