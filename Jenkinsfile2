@@ -8,15 +8,15 @@ pipeline{
   stage('Test') {
   
     steps {
-     git clone https://github.com/venkatjk/jenkins-private.git
+         git clone https://github.com/venkatjk/jenkins-private.git
    
-    }
+         }
 
     
-  }
+      }
 
 }
-
+}
 
     
-}
+
