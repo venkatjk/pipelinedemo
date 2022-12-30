@@ -9,6 +9,12 @@ pipeline{
             }
            
         }
+        stage("Shell command"){
+            steps{
+                sh 'date'
+            }
+           
+        }
     }
     
 }
