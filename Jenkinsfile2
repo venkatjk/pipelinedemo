@@ -2,21 +2,14 @@ pipeline{
     
     agent any
 
-
-   stages {
+    stages{
+        stage("Clone"){
+            steps{
+                echo "========git repo clone========"
+                git clone https://github.com/venkatjk/jenkins-private.git
+            }
+           
+        }
+    }
     
-  stage('Test') {
-  
-    steps {
-         git clone https://github.com/venkatjk/jenkins-private.git
-   
-         }
-
-    
-      }
-
 }
-}
-
-    
-
