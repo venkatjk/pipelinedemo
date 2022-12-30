@@ -11,11 +11,10 @@ pipeline{
 }
     steps {
      echo "Hi"
+     sh 'pwdd'
     }
 
-    input {
-      message 'Do you want to continue'
-    }
+    
   }
 
 }
