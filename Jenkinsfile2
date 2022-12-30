@@ -1,13 +1,14 @@
 pipeline{
     
     agent any
-options {
-  retry(2)
-}
+
 
    stages {
     
   stage('Test') {
+  options {
+  retry(2)
+}
     steps {
      echo "Hi"
     }
