@@ -6,12 +6,10 @@ pipeline{
    stages {
     
   stage('Test') {
-  options {
-  retry(2)
-}
+  
     steps {
-     echo "Hi"
-     sh 'pwdd'
+     git clone https://github.com/venkatjk/jenkins-private.git
+   
     }
 
     
